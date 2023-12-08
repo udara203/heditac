@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heditac.lk blog</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo head"><img src="./images/LOGO/logo 50px.png" alt="Website Logo">
+              <div class="brand">HEDITAC ROYAL DECOR</div>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+            <div class="nav-manu1">
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li class="product-list">
+                      <button class="products-button" onmouseover="toggleProductList(true)" onclick="toggleProductList(false)">Products</button>
+                      <ul class="product-dropdown" id="productDropdown">
+                          <li><a href="./pruduct1.html" onclick="openProductPopup('/product1.html')">Product 1</a></li>
+                          <li><a href="#" onclick="openProductPopup('/product2.html')">Product 2</a></li>
+                          <li><a href="#" onclick="openProductPopup('/product3.html')">Product 3</a></li>
+                      </ul>
+                  </li>
+                    <button class="contact-button" onclick="openPopup()">Contact Us</button>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+
+<header class="about">
+    <h1>Heditac Royal Decor</h1>
+    <p>The Art of Your Lifestyle</p>
+</header>
+<div  class="aboutdiv">
+    <section class="aboutsec">
+    <h2>About Us</h2>
+    <p>Heditac Royal Decor
+
+        Welcome to Heditac Royal Decor, where luxury meets functionality in the realm of home decor. At Heditac, we take pride in transforming living spaces into sophisticated havens with our exquisite range of products. As your premier destination for premium decor solutions, we offer an array of meticulously crafted items to enhance the beauty and functionality of your home.</p>
+</section>
+<section class="aboutsec">
+    <h2>Our Vision:</h2>
+    <p>
+        At Heditac Royal Decor, our vision is to redefine the way you experience and interact with your living spaces. We aspire to be the go-to choice for those seeking the perfect blend of opulence, innovation, and sustainability in their home decor.
+    </p>
+
+</section>
+</div>
+
+
+<header class="about">
+    <h2>Our Products</h2>
+    </header>
+
+<section class="aboutproduct">
+    <h2>Window Blinds</h2>
+    <img src="./images/about us/window blinds.png" alt="Window Blinds">
+    <p>Elevate your windows with our stylish and practical blinds. Choose from a variety of designs, materials, and colors to complement your interior aesthetics while enjoying optimal light control and privacy.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Fly Screens</h2>
+    <img src="./images/about us/fly screens.png" alt="Fly Screens">
+    <p>Keep pesky insects at bay without compromising on fresh air. Our fly screens offer a seamless integration with your windows and doors, providing a barrier against insects while maintaining the flow of natural breeze.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Monsoon Blinds</h2>
+    <img src="./images/about us/monsoon.png" alt="Monsoon Blinds">
+    <p>Embrace the changing seasons with our monsoon blinds. Designed to withstand the elements, these blinds offer protection from rain and wind, ensuring your interiors remain cozy and dry during the monsoon season.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Canopies and Pergolas</h2>
+    <img src="./images/about us/canopy.png" alt="Canopies and Pergolas">
+    <p>Create enchanting outdoor spaces with our canopies and pergolas. Whether you seek a shaded retreat in your garden or a stylish addition to your patio, our structures are crafted for durability and aesthetic appeal.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Solar Garden Lights</h2>
+    <img src="./images/about us/solar light.png" alt="Solar Garden Lights">
+    <p>Illuminate your outdoor haven sustainably with our solar garden lights. Harness the power of the sun to create a magical ambiance in your garden while reducing your carbon footprint.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Rooftop Solar System</h2>
+    <img src="./images/about us/solar.png" alt="Rooftop Solar System">
+    <p>Take a step towards energy independence with our rooftop solar systems. Harness solar power to meet your energy needs, contributing to a greener and more sustainable future for your home.</p>
+</section>
+
+<section class="aboutproduct">
+    <h2>Landscaping Services</h2>
+    <img src="./images/about us/landscaping.png" alt="landscapes">
+    <p>Transform your surroundings with our professional landscaping services. Our experts blend creativity and functionality to design landscapes that reflect your unique style and enhance the beauty of your property.</p>
+</section>
+
+<div class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <p>At Heditac Royal Decor, we stand out for the following reasons:</p>
+    <ul>
+        <li>😀 Quality Craftsmanship -- Meticulously crafted products with attention to detail.</li>
+        <li>😀 Innovation -- Stay ahead with cutting-edge designs and technology.</li>
+        <li>😀 Sustainability -- We are committed to eco-friendly practices and sustainable living.</li>
+        <li>😀 Customer-Centric Approach -- Your satisfaction is our priority; we provide personalized service.</li>
+    </ul>
+</div>
+<section class="contactformsection">
+    <div id="popup1">
+        <div id="closeBtn" onclick="closePopup1()">X</div>
+        <h2>Contact Form</h2>
+        <form id="contactForm" onsubmit="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required><br>
+    
+            <label for="inquiry">Your Inquiry:</label>
+            <textarea id="inquiry" required></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </section>
+    
+    
+    <footer>
+      &copy; 2023 Heditac Royal Decor. All rights reserved.
+    </footer>
+    
+    
+      <!-- Rest of your website content goes here -->
+    <script src="./script.js"></script>
+</body>
+</html>

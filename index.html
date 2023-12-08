@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Website</title>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <div class="logo head"><img src="./images/LOGO/logo 50px.png" alt="Website Logo">
+          <div class="brand">HEDITAC ROYAL DECOR</div>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+        <div class="nav-manu1">
+          <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li class="product-list">
+                  <button class="products-button" onmouseover="toggleProductList(true)" onclick="toggleProductList(false)">Products</button>
+                  <ul class="product-dropdown" id="productDropdown">
+                      <li><a href="./pruduct1.html" onclick="openProductPopup('/product1.html')">Product 1</a></li>
+                      <li><a href="#" onclick="openProductPopup('/product2.html')">Product 2</a></li>
+                      <li><a href="#" onclick="openProductPopup('/product3.html')">Product 3</a></li>
+                  </ul>
+              </li>
+                <button class="contact-button" onclick="openPopup()">Contact Us</button>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    </div>
+    </div>
+</header>
+<section>
+  <div class="hero">
+    <div class="heroleft">
+      <img src="./images/Untitled design.gif" alt="">
+    </div>
+    <div class="heroimg1">
+      <img  class="heroimg" src="./images/LOGO/1.png" alt="main image">
+    </div>
+  </div>
+  <div class="heroleft1">
+    <img class="leftimg1" src="./images/Untitled design.gif" alt="">
+  </div>
+
+    
+
+  
+</section>
+
+<section>
+  <div class="us">
+    <div class="whowe">
+      <h3>WHO WE ARE</h3>
+      <h2>
+        HEDITAC ROYAL DECOR
+      </h2>
+      <p>
+        Welcome to Heditac Royal Decor - where we turn spaces into masterpieces, crafting the art of your lifestyle. Elevate your surroundings with our exquisite range of window blinds, fly screens, monsoon blinds, canopies, pergolas, solar garden lights, rooftop solar systems, and landscaping services. Experience the perfect fusion of innovation and elegance, as we redefine the canvas of your living spaces. Your lifestyle is an art, and we're here to make it extraordinary. Welcome to the art of your lifestyle.
+      </p>
+      <div class="featureimg">
+        <img src="./images/features/1.png" alt="">
+        <img src="./images/features/2.png" alt="">
+        <img src="./images/features/3.png" alt="">
+        <img src="./images/features/4.png" alt="">
+      </div>
+    </div>
+    <div id="gallery-carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item">
+              <img src="./images/New folder/2.png" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+              <img src="./images/New folder/1.png " alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/New folder/3.png " alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/New folder/4.png " alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/New folder/5.png " alt="Image 2">
+    </div>
+      </div>
+  
+      <div class="carousel-controls">
+          <div class="carousel-control" onclick="prevSlide()">&#10094;</div>
+          <div class="carousel-control" onclick="nextSlide()">&#10095;</div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section>
+<div>
+  <h2 class="whysect">
+    Why Should You Install Mosquito Nets in Your Home?
+  </h2>
+</div>
+
+<div class="custom-carousel-container">
+  <div class="custom-carousel-wrapper">
+    
+      <div class="custom-carousel-item">
+         <img src="./images/car2/2.png" alt="Custom Image 1">
+          <h2>Disease Prevention</h2>
+          <p>Mosquitoes are carriers of diseases such as malaria, dengue fever, Zika virus, and more. Installing mosquito nets acts as a physical barrier, preventing mosquitoes from entering your living spaces and reducing the risk of mosquito-borne illnesses.</p>
+      </div>
+      <div class="custom-carousel-item">
+        
+          <img src="./images/car2/1.png" alt="Custom Image 2">
+          <h2>Safe and Non-Toxic</h2>
+          <p>Unlike chemical-based mosquito repellents, nets provide a safe and non-toxic solution. They offer protection without exposing you and your family to potentially harmful substances, making them an eco-friendly and health-conscious choice.</p>
+      </div>
+      <div class="custom-carousel-item">
+        
+          <img src="./images/car2/3.png" alt="Custom Image 3">
+          <h2>Uninterrupted Sleep</h2>
+          <p>Mosquitoes are notorious for disrupting peaceful sleep with their buzzing and irritating bites. Mosquito nets create a protective shield around your bed, ensuring a restful night's sleep without the disturbance of these nocturnal pests.</p>
+      </div>
+      <div class="custom-carousel-item">
+        
+          <img src="./images/car2/4.png" alt="Custom Image 4">
+          <h2>Cost-Effective</h2>
+          <p>Investing in mosquito nets is a cost-effective long-term solution. Compared to ongoing expenses on insect repellents, sprays, or medical treatments for mosquito-related illnesses, nets offer a one-time investment that provides continuous protection.</p>
+      </div>
+      <div class="custom-carousel-item">
+        
+          <img src="./images/car2/5.png" alt="Custom Image 5">
+          <h2>Versatility and Aesthetics</h2>
+          <p>CMosquito nets come in various styles, colors, and designs, adding an aesthetic touch to your living spaces. Whether you prefer a traditional canopy or a modern, retractable net, you can choose a design that complements your home décor while keeping mosquitoes at bay.</p>
+      </div>
+  </div>
+
+  <div class="custom-carousel-controls">
+    <button class="custom-control-button" onclick="customPrevSlide()">Prev</button>
+    <button class="custom-control-button" onclick="customNextSlide()">Next</button>
+</div>
+</div>
+
+
+</section>
+
+<section class="contactbottomfoam">
+  <div class="contact-container">
+    <div class="contact-info-container">
+        <h2>Contact Information</h2>
+        <p>Address: Heditac Royal Decor,<br>
+            No 3B, Galle Road, Nalluruwa,<br>
+            Panadura(Sri Lanka)
+        </p>
+        <p>Email: heditac.lk</p>
+        <p class="highlight-phone" onclick="togglePopup()">Phone: <span class="popup" id="phonePopup">Click to Call</span> <a href="tel:+94777929230">+94 777 92 92 30</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.629273408428!2d79.91337147550556!3d6.692756121172295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae245d215ec9095%3A0x6512b9813d07612e!2sHeditac%20Solar!5e0!3m2!1sen!2slk!4v1702015365287!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    <div class="contact-form-container">
+        <h2>Contact Form</h2>
+        <form id="whatsappForm" onsubmit="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="customName" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="customEmail" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="customPhone" name="phone" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="customMessage" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+</section>
+
+      <div>
+      </div>
+ 
+<section class="contactformsection">
+<div id="popup1">
+    <div id="closeBtn" onclick="closePopup1()">X</div>
+    <h2>Contact Form</h2>
+    <form id="contactForm" onsubmit="submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required><br>
+
+        <label for="inquiry">Your Inquiry:</label>
+        <textarea id="inquiry" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</section>
+
+<section class="advertismentpopup">
+  <div id="popup-container" class="popup-container">
+    <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        <img src="./images/popup/no mosq sinhala.gif" alt="Popup Image">
+        <button class="manual-close-button" onclick="closePopupManually()">Close</button>
+    </div>
+</div>
+
+</section>
+
+<footer>
+  &copy; 2023 Heditac Royal Decor. All rights reserved.
+</footer>
+
+
+  <!-- Rest of your website content goes here -->
+<script src="./script.js"></script>
+</body>
+</html>
+

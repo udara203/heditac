@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .productheader {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .product-details {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .contact-us-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-us-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo head"><img src="./images/LOGO/logo 50px.png" alt="Website Logo">
+              <div class="brand">HEDITAC ROYAL DECOR</div>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+            <div class="nav-manu1">
+              <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li class="product-list">
+                      <button class="products-button" onmouseover="toggleProductList(true)" onclick="toggleProductList(false)">Products</button>
+                      <ul class="product-dropdown" id="productDropdown">
+                          <li><a href="./pruduct1.html" onclick="openProductPopup('/product1.html')">Product 1</a></li>
+                          <li><a href="#" onclick="openProductPopup('/product2.html')">Product 2</a></li>
+                          <li><a href="#" onclick="openProductPopup('/product3.html')">Product 3</a></li>
+                      </ul>
+                  </li>
+                    <button class="contact-button" onclick="openPopup()">Contact Us</button>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+
+<header class="productheader">
+    <h1>Product Name</h1>
+</header>
+
+<div class="product-container">
+    <img src="product-image.jpg" alt="Product Image" class="product-image">
+    
+    <div class="product-details">
+        <p>This is an amazing product that will revolutionize your life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <div class="features">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Feature 1: Lorem ipsum dolor sit amet.</li>
+                <li>Feature 2: Consectetur adipiscing elit.</li>
+                <li>Feature 3: Sed do eiusmod tempor incididunt ut labore.</li>
+                <li>Feature 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="contact-button" onclick="openPopup()">Contact Us for Pricing</button>
+</div>
+
+
+  
+   
+  <section class="contactformsection">
+  <div id="popup1">
+      <div id="closeBtn" onclick="closePopup1()">X</div>
+      <h2>Contact Form</h2>
+      <form id="contactForm" onsubmit="submitForm()">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required><br>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" required><br>
+  
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required><br>
+  
+          <label for="inquiry">Your Inquiry:</label>
+          <textarea id="inquiry" required></textarea><br>
+  
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+  </section>
+  
+  
+  <footer>
+    &copy; 2023 Heditac Royal Decor. All rights reserved.
+  </footer>
+  
+  
+    <!-- Rest of your website content goes here -->
+  <script src="./script.js"></script>
+</body>
+</html>
