@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Show product dropdown on hover
-    productsButton.addEventListener("mouseover", function () {
+    productsButton.addEventListener("click", function () {
         toggleProductList(true);
     });
 
     // Hide product dropdown on mouseout
-    document.addEventListener("mouseout", function (event) {
+    document.addEventListener("click", function (event) {
         if (!event.target.closest(".product-list")) {
             toggleProductList(false);
         }
@@ -180,11 +180,12 @@ function submitForm() {
 /*end contact popup */
 
 /*advertisment popup */
+
 document.addEventListener("DOMContentLoaded", function () {
     // Display the popup after a delay (e.g., 3 seconds)
     setTimeout(function () {
         document.getElementById("popup-container").style.display = "flex";
-    }, 10000);
+    }, 100000);
 });
 
 // Function to close the popup

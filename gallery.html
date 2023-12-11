@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Stylish Gallery</title>
+</head>
+<header>
+  <div class="container">
+      <div class="logo head"><img src="./images/LOGO/logo 50px.png" alt="Website Logo">
+        <div class="brand">HEDITAC ROYAL DECOR</div>
+      </div>
+      
+      <div class="menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+      <div class="nav-manu1">
+        <nav class="nav-menu">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li class="product-list">
+                <button class="products-button" onmouseover="toggleProductList(true)" onclick="toggleProductList(false)">Products</button>
+                <ul class="product-dropdown" id="productDropdown">
+                    <li><a href="./pruduct1.html" onclick="openProductPopup('/product1.html')">Product 1</a></li>
+                    <li><a href="#" onclick="openProductPopup('/product2.html')">Product 2</a></li>
+                    <li><a href="#" onclick="openProductPopup('/product3.html')">Product 3</a></li>
+                </ul>
+            </li>
+              <button class="contact-button" onclick="openPopup()">Contact Us</button>
+          </ul>
+      </nav>
+      </div>
+  </div>
+  </div>
+  </div>
+</header>
+
+
+<body>
+  <div class="gallery">
+    <div class="gallery-left">
+      <h1>OUR PROJECTS</h1>
+      <p>Explore our diverse projects in Sri Lanka, where the elegance of window blinds, the functionality of fly screens, the resilience of monsoon blinds, and the sustainability of rooftop solar systems converge. Immerse yourself in a visual journey through spaces transformed by Heditac Royal Decor, where each project is a testament to our commitment to excellence and innovative solutions. Discover the seamless integration of style and practicality in every corner, showcasing the artistry of window blinds, the serenity of fly screens, the durability of monsoon blinds, and the eco-conscious approach of rooftop solar systems. Be inspired by the harmonious blend of design and purpose in our completed ventures across the captivating landscapes of Sri Lanka.</p>
+    </div>
+     <div class="gallery-right">
+    <div class="gallerypage">
+    <div id="gallery-carousel" class="gallery-carousel1">
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="./images/gallery/1.png" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/gallery/2.png " alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/gallery/3.png " alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/gallery/4.png " alt="Image 2">
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  </div>
+ 
+ 
+  
+  <section class="contactformsection">
+    <div id="popup1">
+        <div id="closeBtn" onclick="closePopup1()">X</div>
+        <h2>Contact Form</h2>
+        <form id="contactForm" onsubmit="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required><br>
+    
+            <label for="inquiry">Your Inquiry:</label>
+            <textarea id="inquiry" required></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </section>
+    
+    
+    <footer class="glafoot">
+      &copy; 2023 Heditac Royal Decor. All rights reserved.
+    </footer>
+    
+      <!-- Rest of your website content goes here -->
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -79,7 +79,10 @@ body {
 /* Responsive Styles */
 @media (max-width: 600px) {
   #popup1 {
-      width: 95%;
+      width: 80%;
+      margin-top: 100px;
+      
+      
   }
 }
 
@@ -671,6 +674,22 @@ width: 10%;
 .manual-close-button:focus {
   background-color: #000;
 }
+
+@media (max-width: 768px)  {
+  .popup-container {
+      width:  80%;
+      margin: 0 auto;
+      padding: 25px;
+      
+  }
+
+  .popup-content {
+      padding: 5px;
+  }
+  .popup-container img{
+    width: 75%;
+  }
+}
 /*popupadv*/
 
 /*about us*/
@@ -754,7 +773,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-  position: fixed;
    bottom: 0; 
    width: 100%;
 }
@@ -807,11 +825,16 @@ footer {
 
 
 main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
+  max-width: 100%;
+  margin:  auto;
+  padding: 5px 30px;
+  background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+main h1{
+  text-align: center;
 }
 
 .article {
@@ -836,16 +859,23 @@ main {
 
 .article h1{
   font-size: 2rem;
-  color: #096d00;
+  color: #ff9100;
 }
 .blogheader{
   
   padding: 10px;
-  background-color: #161A30;
+  background-color: #000000;
 }
 
 .article p{
   text-align: justify;
+}
+
+.galfoot{
+  width: 100%;
+  bottom: 0%;
+  position: fixed;
+  margin: auto;
 }
 
 @media (max-width: 768px){
@@ -858,9 +888,58 @@ main {
 .article img{
   display: block;
  margin: auto;
- width: 50%;
+ width: 40%;
 }
 
 /* product popup*/
 
 /*product popup end*/
+
+/*galary page*/
+
+.gallery{
+  display: block;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #000;
+  padding-bottom: 10px;
+}
+
+.gallery-left{
+  
+  color: #ff9100;
+  text-align: justify;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery-left p{
+  color: white;
+}
+.gallery-right{
+  max-width: 75%;
+  margin: auto;
+  padding: 0%;
+}
+
+.gallery-carousel1{
+
+  position: relative;
+    width: 75%;
+    max-width: 100px; /* Adjust the maximum width as needed */
+    overflow: hidden;
+    margin-top: 20px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+@media (max-width: 768px){
+  .gallery-right{
+    max-width: 100%;
+    padding: 0%;
+  }
+.gallery h1{
+  text-align: center;
+}
+
+}
+/*gallery page end*/
